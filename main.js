@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const img=document.querySelector('.reveal-img');if(!img)return;const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.15,rootMargin:'0px 0px -60px 0px'});obs.observe(img);});
